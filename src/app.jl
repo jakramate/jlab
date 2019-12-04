@@ -33,7 +33,7 @@ using Mux
   page("/user/:user", req -> "<h1>Hello, $(req[:params][:user])!</h1>"),
   Mux.notfound())
 
-fetch(serve(test,parse(Int,ARGS[1])))
+serve(test)
 
 
 
