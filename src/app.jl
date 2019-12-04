@@ -45,15 +45,11 @@ function index()
         res *= "<tr><td class='thumbnail'><img src='data.jpg' alt='data'></td><td class='description'><p>Description: asdfasfasdfadfdsfdfdf<br> Contributor: <br> Date:</p></td></tr>"
     end
 
-    res *=  "</table>
-        </main>
+    res *=  "</table></main>
 	<footer class='page-footer'>Data science research center, Faculty of Science, Chiang Mai University</footer>
     </body>
-
-</html>"
-    print(res)
+    </html>"
     return res
-
 end
 
 
