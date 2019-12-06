@@ -41,11 +41,11 @@ function index()
 	<table>"
 
 	# now looping thru items in our database
-    #for i=1:5
-    #    res *= "<tr><td class='thumbnail'><img src='data.jpg' alt='data'></td><td class='description'><p>Description: asdfasfasdfadfdsfdfdf<br> Contributor: <br> Date:</p></td></tr>"
-    #end
+    for i=1:5
+        res *= "<tr><td class='thumbnail'><img src='data.jpg' alt='data'></td><td class='description'><p>Description: asdfasfasdfadfdsfdfdf<br> Contributor: <br> Date:</p></td></tr>"
+    end
 
-    #res *=  "</table></main><footer class='page-footer'>Data science research center, Faculty of Science, Chiang Mai University</footer></body></html>"
+    res *=  "</table></main><footer class='page-footer'>Data science research center, Faculty of Science, Chiang Mai University</footer></body></html>"
     return res
 end
 
