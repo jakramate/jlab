@@ -1,3 +1,8 @@
+
+using Mux, AssetRegistry
+
+orchid_img = AssetRegistry.register("./assets/orchid.jpg")
+
 function index()
     res = " <html>   <head>
         <style>
@@ -42,7 +47,7 @@ function index()
 
 	# now looping thru items in our database
     for i=1:5
-        res *= "<tr><td class='thumbnail'><img src='data.jpg' alt='data'></td><td class='description'><p>Description: asdfasfasdfadfdsfdfdf<br> Contributor: <br> Date:</p></td></tr>"
+        res *= "<tr><td class='thumbnail'><img src='$orchid_img' alt='data'></td><td class='description'><p>Description: asdfasfasdfadfdsfdfdf<br> Contributor: <br> Date:</p></td></tr>"
     end
 
     res *=  "</table></main><footer class='page-footer'>Data science research center, Faculty of Science, Chiang Mai University</footer></body></html>"
@@ -50,7 +55,6 @@ function index()
 end
 
 
-using Mux
 
 @app test = (
   Mux.defaults,
