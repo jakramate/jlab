@@ -1,6 +1,6 @@
 function index()
-    res = " asdfasdf"
-    return respond(res)
+    res = "asdf"
+    return res
 end
 
 
