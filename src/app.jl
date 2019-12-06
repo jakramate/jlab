@@ -1,6 +1,3 @@
-import Pkg
-Pkg.add("AssetRegistry")
-
 using Mux, AssetRegistry
 
 orchid_img = AssetRegistry.register("./assets/orchid.jpg")
