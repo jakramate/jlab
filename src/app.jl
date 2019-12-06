@@ -49,7 +49,7 @@ function index()
 	<footer class='page-footer'>Data science research center, Faculty of Science, Chiang Mai University</footer>
     </body>
     </html>"
-    return res
+    return respond(res)
 end
 
 
